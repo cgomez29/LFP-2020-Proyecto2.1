@@ -1,0 +1,20 @@
+A > c B
+A > v G
+B > c C
+B > v D
+B > epsilon
+C > c G
+C > c B
+D > v E
+D > c C
+D > epsilon
+E > v F
+E > c C
+E > epsilon
+F > epsilon
+F > c C
+G > v H
+G > c B
+H > v I
+H > c B
+I > c B

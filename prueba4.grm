@@ -1,0 +1,7 @@
+S > a A
+S > b B
+A > A 0
+A > A 1
+A > 0
+B > B s
+B > m
