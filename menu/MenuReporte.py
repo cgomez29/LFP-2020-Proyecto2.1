@@ -5,7 +5,7 @@ import easygui as eg
 from colorama import Fore, Style
 from ControladorGramatica import ControladorGramatica
 from ControladorAFD import ControladorAFD
-from AFD import AFD
+from bean.AFD import AFD
 from Grafo import Grafo
 
 # Importaciones para crear PDF

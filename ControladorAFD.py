@@ -1,4 +1,4 @@
-from AFD import AFD
+from bean.AFD import AFD
 
 class ControladorAFD(object):
     __instancia = None

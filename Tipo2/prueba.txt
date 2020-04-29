@@ -1,0 +1,17 @@
+S > a S b
+S > ab
+
+
+        ## T -> Transiciones  
+        # i,λ,λ;p,#
+        # p,λ,λ;q,S
+        # q,λ,S;q,aSb
+        # q,a,a;q,λ
+
+        self.transicion.append("i,λ,λ;p,#")
+        self.transicion.append("p,λ,λ;q," + "Push No terminal inicial -> S")
+        self.transicion.append("i,λ, "+ "Pop el no terminal" +";p,"+ "ingreso lo que implica S -> a S b")
+
+    
+
+        

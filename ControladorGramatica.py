@@ -1,4 +1,4 @@
-from Gramatica import Gramatica
+from bean.Gramatica import Gramatica
 
 class ControladorGramatica(object):
     __instancia = None
@@ -10,6 +10,26 @@ class ControladorGramatica(object):
     
     def __init__(self):
         self.__arregloGramatica = [] #Arreglo de afd creados
+        ant = []
+        t = []
+        inicial = ""
+        producci = []
+
+        ant.append("i") 
+        ant.append("P") 
+        ant.append("q") 
+        ant.append("f")
+        t.append("a") 
+        t.append("b") 
+        inicial = "S" 
+        producci.append("S > a S b")
+        producci.append("S > epsilon")
+        #producci.append("S > ab")
+
+        self.crearGramatica("q", ant, t, inicial, producci)
+
+
+
 
     def crearGramatica(self, nombreGramatica, arrayNT, arrayT,
         nTInicial, producciones):

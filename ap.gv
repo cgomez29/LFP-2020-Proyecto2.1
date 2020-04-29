@@ -1,0 +1,18 @@
+digraph ap {
+	rankdir=LR size="8,5"
+	node [shape=circle]
+	i -> p [label="λ,λ;#"]
+	p -> q [label="λ,λ;A"]
+	q -> q [style=invis]
+	q -> q [label="λ,A;0B11
+λ,B;0B11
+λ,A;λ
+0,0;λ
+1,1;λ
+"]
+	q -> f [label="λ,#;λ"]
+	f [peripheries=2]
+	node [shape=none]
+	edge [arrowhead=empty arrowsize=1.5]
+	"" -> i
+}

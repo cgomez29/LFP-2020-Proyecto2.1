@@ -5,8 +5,8 @@ from easygui import *
 from colorama import Fore, Style
 from ControladorAFD import ControladorAFD
 from ControladorGramatica import ControladorGramatica
-from MenuAFD import MenuAFD
-from MenuGramatica import MenuGramatica
+from menu.MenuAFD import MenuAFD
+from menu.MenuGramatica import MenuGramatica
 
 class CargarArchivo(object):
     __instancia = None

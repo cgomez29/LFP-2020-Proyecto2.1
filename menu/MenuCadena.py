@@ -4,7 +4,7 @@ from ControladorGramatica import ControladorGramatica
 from colorama import Fore, Style
 from ControladorAFD import ControladorAFD
 from Recorrido import Recorrido
-from AFD import AFD
+from bean.AFD import AFD
 
 class MenuCadena(object):
     #Menu de evaluar cadena

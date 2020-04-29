@@ -1,17 +1,19 @@
 digraph x {
 	rankdir=LR size="8,5"
 	node [shape=circle]
-	A
-	B
+	i
+	p
+	q
 	node [shape=doublecircle]
-	C
-	A -> A [label=1]
-	A -> B [label=0]
-	B -> B [label=1]
-	B -> C [label=0]
-	C -> C [label=1]
-	C -> C [label=0]
+	f
+	i -> p [label="λ,λ;#"]
+	p -> q [label="λ,λ;S"]
+	q -> q [label="a,a;λ"]
+	q -> q [label="b,b;λ"]
+	q -> q [label="λ,S;aSb"]
+	q -> q [label="λ,S;epsilon"]
+	q -> f [label="λ,#;λ"]
 	node [shape=none]
 	edge [arrowhead=empty arrowsize=1.5]
-	"" -> A
+	"" -> i
 }

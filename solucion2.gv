@@ -1,0 +1,26 @@
+digraph solucion2 {
+	subgraph child {
+		rankdir=TB size="8,5"
+		rank=same
+		node [height=0.5 shape=ellipse width=0.5]
+		i -> p [label="λ,λ;#"]
+		p -> q [label="λ,λ;A"]
+		q [width=1.5]
+		q:n -> q:n [style=invis]
+		q:n -> q:n [label="λ,B;0B11" arrowsize=0.8]
+		q:ne -> q:ne [style=invis]
+		q:ne -> q:ne [style=invis]
+		q:ne -> q:ne [style=invis]
+		q:ne -> q:ne [label="	λ,B;λ" arrowsize=0.8]
+		q:s -> q:s [style=invis]
+		q:s -> q:s [label="0,0;λ" arrowsize=0.8]
+		q:se -> q:se [style=invis]
+		q:se -> q:se [style=invis]
+		q:se -> q:se [label="	1,1;λ" arrowsize=0.8]
+		q -> f [label="λ,#;λ"]
+		f [peripheries=2]
+		node [shape=none]
+		edge [arrowhead=empty arrowsize=1.5]
+		"" -> i
+	}
+}

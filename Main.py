@@ -4,13 +4,14 @@ import msvcrt
 from graphviz import Digraph
 from colorama import Fore, Style
 
-from MenuAFD import MenuAFD
-from MenuGramatica import MenuGramatica
-from MenuCadena import MenuCadena
-from CargarArchivo import CargarArchivo
-from MenuReporte import MenuReporte
+from menu.MenuAFD import MenuAFD
+from menu.MenuGramatica import MenuGramatica
+from menu.MenuCadena import MenuCadena
+from menu.CargarArchivo import CargarArchivo
+from menu.MenuReporte import MenuReporte
 from Error import Error
-from MenuGuardar import MenuGuardar
+from menu.MenuGuardar import MenuGuardar
+from Tipo2.MenuGramaticaTipo2 import MenuGramTipo2
 
 class Main:
     __instancia = None
@@ -34,6 +35,7 @@ class Main:
         self.menuCadena = MenuCadena()
         self.menuReporte = MenuReporte()
         self.menuGuardar = MenuGuardar()
+        self.menuGramTipo2 = MenuGramTipo2()
 
     def menuPrincipal(self):
         os.system("cls")
@@ -65,14 +67,12 @@ class Main:
             print("4. Reportes")        
             print("5. Cargar archivo de entrada")        
             print("6. Guardar")        
+            print("7. Gramáticas tipo2 y AP")        
             print("Salir" + Style.RESET_ALL)        
             print(">>", end="")
             entrada = input()
             if entrada == "1":
                 self.menuAFD.menuAFD()
-                #g = Digraph('G', filename='hello.gv')
-                #g.edge('Hello', 'World')
-                #g.view()*/
             elif(entrada == "2"):
                 self.menuGramatica.menuGramatica()
             elif(entrada == "3"):
@@ -83,6 +83,8 @@ class Main:
                 self.cargarArchivo.openFile()
             elif(entrada == "6"):
                 self.menuGuardar.menuGuardar()
+            elif(entrada == "7"):
+                self.menuGramTipo2.menu()
             elif(entrada == "0"):
                 self.menuReporte.generarReporte() #Borrar esto
             elif entrada.lower() == "salir":
